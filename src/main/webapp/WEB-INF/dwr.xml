@@ -1,0 +1,17 @@
+<!DOCTYPE dwr PUBLIC
+        "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+        "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+    <allow>
+        <create creator="new" javascript="chartData">
+            <param name="class" value="com.springapp.mvc.ChartData"/>
+        </create>
+        <convert converter="bean" match="com.springapp.mvc.Distribution">
+            <param name="include" value="metricName,datetime"/>
+        </convert>
+        <convert converter="bean" match="com.springapp.mvc.Count">
+            <param name="include" value="metricName,datetime"/>
+        </convert>
+    </allow>
+</dwr>
