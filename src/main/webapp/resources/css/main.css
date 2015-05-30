@@ -1,7 +1,7 @@
 /* FONT STACK */
 body,
 input, select, textarea {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, THEPuddingP;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,11 +11,10 @@ h1, h2, h3, h4, h5, h6 {
 /* BASE LAYOUT */
 
 html {
-    background-color: #ddd;
-    background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
+    background-color: #BBFFFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #67E6EC), color-stop(1, #BBFFFF));
     background-image: linear-gradient(top, #aaa, #ddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#67E6EC', EndColorStr = '#BBFFFF');
     background-repeat: no-repeat;
     height: 100%;
     /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
@@ -37,7 +36,7 @@ html * {
 }
 
 body {
-    background: #ffffff;
+    background: #F0FFFF;
     color: #333333;
     margin: 0 auto;
     max-width: 1800px;
@@ -47,8 +46,9 @@ body {
     box-shadow: 0 0 0.3em #255b17;
 }
 
-#resonateLogo {
-    background-color: #ffffff;
+#890Logo {
+    background-color: #F0FFFF;
+    padding-left: 10px;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -65,7 +65,7 @@ body {
 }
 
 a:link, a:visited, a:hover {
-    color: #48802c;
+    color: #F0FFFF;
 }
 
 a:hover, a:active {
@@ -109,7 +109,7 @@ img {
 }
 
 .footer {
-    background: #0080FF;
+    background: #00C5CD;
     color: #000;
     clear: both;
     font-size: 0.8em;
@@ -120,7 +120,7 @@ img {
 
 .header{
 
-    background: #0080FF;
+    background: #00C5CD;
     color: #000;
     clear: both;
     font-size: 0.8em;
@@ -614,11 +614,13 @@ a.skip {
 
 
 #status {
-    background-color: #ddd;
+    background-color: #fff;
     border: .2em solid #fff;
     margin: 2em 2em 1em;
     padding: 1em;
     width: 12em;
+    /* TODO */
+    height:40em;
     float: left;
     -moz-box-shadow: 0px 0px 1.25em #ccc;
     -webkit-box-shadow: 0px 0px 1.25em #ccc;
@@ -631,8 +633,9 @@ a.skip {
 #status-main {
     /*margin: 2em 2em 1em;*/
     /*padding: 1em;*/
-    width: 12em;
-    float: left;
+    padding-top: 5%;
+    padding-left: 50%;
+
 
 }
 

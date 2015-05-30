@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="charset=utf-8" />
 <link rel="stylesheet" href='<c:url value="/resources/css/d3/nv.d3.css" />' type="text/css" />
 <script src='<c:url value="/resources/js/d3/d3.js" />' ></script>
 <script src='<c:url value="/resources/js/d3/nv.d3.js"/>'></script>
@@ -14,10 +15,15 @@ function fetchMenu(){
     chartData.getMenu(loadMenu);
 }
 
-function loadMenu(menu){
-    alert(menu);
-    menuData = eval(menu);
+function loadMenu(){
 
+    var menu = encodeURIComponent("메뉴");
+    menuData = [{ key: decodeURIComponent(menu),
+                    values: [
+                        { key: '890?', url: '/890-dashboard/url1' },
+                        { key: '갤러리', url: '/890-dashboard/url2'}
+                    ]
+                }];
 
 
     nv.addGraph(function() {
@@ -26,7 +32,7 @@ function loadMenu(menu){
     .columns([
     {
         key: 'key',
-        label: '890-dashboard',
+        label: '메뉴',
         showCount: false,
         width: '65%',
         type: 'text',
@@ -46,6 +52,6 @@ function loadMenu(menu){
 
 
 $(document).ready(function() {
-    fetchMenu();
+    loadMenu();
 });
 </script>

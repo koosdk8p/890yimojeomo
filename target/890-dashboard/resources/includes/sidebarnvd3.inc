@@ -3,7 +3,6 @@
 <script src='<c:url value="/resources/js/d3/nv.d3.js"/>'></script>
 
 <div id="status" role="complementary" style="float: left; width: 34%" xmlns:g="http://www.w3.org/1999/xhtml">
-    <!--<h1>Resonate Dashboard</h1>-->
     <div id="chart"></div>
 
 </div>
@@ -16,7 +15,7 @@ function fetchMenu(){
 }
 
 function loadMenu(menu){
-    menuData = "[" + menu + "]";
+    alert(menu);
     menuData = eval(menu);
 
 
@@ -27,7 +26,7 @@ function loadMenu(menu){
     .columns([
     {
         key: 'key',
-        label: 'Resonate Dashboard',
+        label: '890-dashboard',
         showCount: false,
         width: '65%',
         type: 'text',

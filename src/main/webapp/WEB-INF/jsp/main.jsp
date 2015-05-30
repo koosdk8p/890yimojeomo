@@ -9,7 +9,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Resonate Dashboard</title>
+    <title>팔구공스럽게</title>
     <%@ include file="/resources/includes/imports.inc" %>
     <link href="<c:url value='/resources/css/bootstrap/owl.carousel.css'/>" rel="stylesheet">
     <link href="<c:url value='/resources/css/bootstrap/owl.theme.css'/>" rel="stylesheet">
@@ -24,6 +24,7 @@
             width: 80%;
             height: auto;
         }
+
     </style>
     <script>
         $(document).ready(function() {
@@ -51,12 +52,13 @@
 <body class='with-3d-shadow with-transitions'>
     <%@ include file="/resources/includes/header.inc" %>
     <%@ include file="/resources/includes/sidebarnvd3.inc" %>
-    <div class="page-body" roll="main" id="status-main" style="float: left; width: 55%; padding-top: 7em;">
+    <div class="page-body" roll="main" id="status-main">
             <div id="owl-demo" class="owl-carousel">
+                한국말
                 <div class="item"><img src="<c:url value='/resources/images/carousel/main1.JPG' />" alt="Carousel1"></div>
+                <div class="item"><img src="<c:url value='/resources/images/carousel/main2.JPG' />" alt="Carousel2"></div>
                 <div class="item"><img src="<c:url value='/resources/images/carousel/main3.JPG' />" alt="Carousel3"></div>
-                <div class="item"><img src="<c:url value='/resources/images/carousel/main5.JPG' />" alt="Carousel5"></div>
-                <div class="item"><img src="<c:url value='/resources/images/carousel/main6.JPG' />" alt="Carousel6"></div>
+                <div class="item"><img src="<c:url value='/resources/images/carousel/main4.JPG' />" alt="Carousel4"></div>
             </div>
     </div>
     <%@ include file="/resources/includes/footer.inc" %>
